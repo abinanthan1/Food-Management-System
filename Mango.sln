@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.CouponAPI", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Web", "Mango.Web\Mango.Web.csproj", "{161F8310-F98D-43C9-9C31-E51C0018FBB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Services.AuthAPI", "Mango.Services.AuthAPI\Mango.Services.AuthAPI.csproj", "{3E409437-993F-4675-91B2-813266BDE20B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.AuthAPI", "Mango.Services.AuthAPI\Mango.Services.AuthAPI.csproj", "{3E409437-993F-4675-91B2-813266BDE20B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Services.ProductAPI", "Mango.Services.ProductAPI\Mango.Services.ProductAPI.csproj", "{804B3C44-A3F8-4CA5-B9F1-7B4311F68A2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{3E409437-993F-4675-91B2-813266BDE20B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E409437-993F-4675-91B2-813266BDE20B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E409437-993F-4675-91B2-813266BDE20B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{804B3C44-A3F8-4CA5-B9F1-7B4311F68A2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{804B3C44-A3F8-4CA5-B9F1-7B4311F68A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{804B3C44-A3F8-4CA5-B9F1-7B4311F68A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{804B3C44-A3F8-4CA5-B9F1-7B4311F68A2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{36CBEA55-FF59-471B-A628-2601BD6873D4} = {B232E051-4DE8-476F-ABCE-362A8588888F}
 		{161F8310-F98D-43C9-9C31-E51C0018FBB9} = {6611C682-03AF-4E11-B6AD-0668BF37C05A}
 		{3E409437-993F-4675-91B2-813266BDE20B} = {B232E051-4DE8-476F-ABCE-362A8588888F}
+		{804B3C44-A3F8-4CA5-B9F1-7B4311F68A2F} = {B232E051-4DE8-476F-ABCE-362A8588888F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {120A0176-80D1-4C00-8EB9-E94CA18C6960}

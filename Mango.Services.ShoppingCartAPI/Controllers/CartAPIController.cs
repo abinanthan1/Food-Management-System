@@ -4,10 +4,8 @@ using Mango.Services.ShoppingCartAPI.Data;
 using Mango.Services.ShoppingCartAPI.Models;
 using Mango.Services.ShoppingCartAPI.Models.Dto;
 using Mango.Services.ShoppingCartAPI.Service.IService;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection.PortableExecutable;
 
 namespace Mango.Services.ShoppingCartAPI.Controllers
 {
@@ -73,7 +71,7 @@ namespace Mango.Services.ShoppingCartAPI.Controllers
         }
 
         [HttpPost("ApplyCoupon")]
-        public async Task<Object> ApplyCoupon([FromBody] CartDto cartDto)
+        public async Task<object> ApplyCoupon([FromBody] CartDto cartDto)
         {
             try
             {
@@ -92,7 +90,7 @@ namespace Mango.Services.ShoppingCartAPI.Controllers
         }
 
         [HttpPost("RemoveCoupon")]
-        public async Task<Object> RemoveCoupon([FromBody] CartDto cartDto)
+        public async Task<object> RemoveCoupon([FromBody] CartDto cartDto)
         {
             try
             {

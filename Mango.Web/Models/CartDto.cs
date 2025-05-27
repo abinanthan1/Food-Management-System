@@ -1,4 +1,5 @@
-﻿namespace Mango.Services.ShoppingCartAPI.Models.Dto
+﻿
+namespace Mango.Web.Models
 {
     public class CartDto
     {

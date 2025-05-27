@@ -24,7 +24,7 @@ namespace Mango.Services.ShoppingCartAPI.Service
             {
                 return JsonConvert.DeserializeObject<IEnumerable<ProductDto>>(Convert.ToString(resp.Result));
             }
-            return new List<ProductDto>();
+           return new List<ProductDto>();
         }
     }
 }

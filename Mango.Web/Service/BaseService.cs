@@ -28,13 +28,13 @@ namespace Mango.Web.Service
 				if(withBearer) 
 				{
 					var token = _tokenProvider.GetToken();
-					message.Headers.Add("Authorization", $"Bearer {token} ");
+					message.Headers.Add("Authorization", $"Bearer {token}");
 				}
 
 				message.RequestUri = new Uri(requestDto.Url);
 				if (requestDto.Data != null)
-				{
-					message.Content = new StringContent(JsonConvert.SerializeObject(requestDto.Data), Encoding.UTF8, "application/json");
+				{ 
+                    message.Content = new StringContent(JsonConvert.SerializeObject(requestDto.Data), Encoding.UTF8, "application/json");
 				}
 
 				HttpResponseMessage? apiResponse = null;
@@ -67,6 +67,7 @@ namespace Mango.Web.Service
 					case HttpStatusCode.InternalServerError:
 						return new() { IsSuccess = false, Message = "Internal server Error" };
 					default:
+
 						var apiContent = await apiResponse.Content.ReadAsStringAsync();
 						var apiResponseDto = JsonConvert.DeserializeObject<ResponseDto>(apiContent);
 						return apiResponseDto;
